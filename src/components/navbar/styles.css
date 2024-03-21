@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  width: 100vw;
+  height: 60px;
+
+  padding: 16px;
+
+  position: sticky;
+  top: 0px;
+
+  background-color: rgb(240, 240, 240);
+  /*justify-content: space-between;*/
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+}
+
+header div a {
+  text-decoration: none;
+  color: rgb(31, 44, 119);
+}
+
+header div a:hover {
+  text-decoration: underline;
+  color: rgb(6, 109, 23);
+}
