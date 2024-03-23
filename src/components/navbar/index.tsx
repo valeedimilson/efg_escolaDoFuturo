@@ -49,7 +49,10 @@ function NavBar() {
   return (
     <header>
       <div className="logo">
-        <img src={logo} />
+        <img
+          src={logo}
+          alt="SIREAG - Sistema de Reserva de Ambientes na Escola do Futuro de Goiás"
+        />
       </div>
       <div className="menuMobile">
         <BtMobile />
