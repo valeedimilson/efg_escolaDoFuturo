@@ -1,30 +1,126 @@
+/*configuração das cores do NavBar*/
+:root {
+  --corFundoNavBar: rgb(240, 240, 240);
+  --corFundoNavBarMenuMobile: rgb(240, 240, 240);
+
+  --corLink: #002e6e;
+  --corLinkMouseOver: #28b578;
+  --corLinkPaginaAtual: #28b578;
+
+  --corMenuMobileBt: #002e6e;
+}
+
 header {
+  z-index: 999;
   display: flex;
   width: 100vw;
+  min-width: 320px;
   height: 60px;
 
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   position: sticky;
   top: 0px;
 
-  background-color: rgb(240, 240, 240);
-  /*justify-content: space-between;*/
+  background-color: var(--corFundoNavBar);
+
   align-items: center;
 }
 
 header div {
   display: flex;
-  gap: 8px;
-  padding: 10px;
+  align-items: center;
+}
+header div ul {
+  list-style-type: none;
+  float: left;
+}
+header div ul li {
+  float: left;
+  padding-left: 8px;
 }
 
 header div a {
   text-decoration: none;
-  color: rgb(31, 44, 119);
+  color: var(--corLink);
 }
 
 header div a:hover {
   text-decoration: underline;
-  color: rgb(6, 109, 23);
+  color: var(--corLinkMouseOver);
+}
+.menuPaginaAtual {
+  text-decoration: underline;
+  color: var(--corLinkPaginaAtual);
+}
+.menuMobile {
+  display: none;
+}
+.menuMobileBt {
+  color: var(--corMenuMobileBt);
+}
+/*MediaQuery para correção em baixas resolução*/
+@media (max-width: 320px) {
+  .menuMobile {
+    max-width: 170px;
+  }
+}
+@media (max-width: 375px) {
+  .menuMobile {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .menu {
+    z-index: -999;
+    position: fixed;
+    top: 60px;
+    right: 0;
+
+    min-width: 60%;
+    max-width: 100%;
+    height: 100%;
+    background-color: var(--corFundoNavBarMenuMobile);
+
+    border-radius: 2% 0 2% 0;
+
+    display: none;
+    flex-direction: column;
+  }
+  .aberto {
+    animation: slideParaBaixo 0.5s ease-in forwards;
+    display: flex;
+  }
+
+  .fechado {
+    animation: slideParaCima 0.5s ease-out forwards;
+    display: flex;
+  }
+  @keyframes slideParaBaixo {
+    0% {
+      transform: translateX(120%);
+      filter: opacity(0);
+    }
+    100% {
+      transform: translateX(0%);
+      filter: opacity(1);
+    }
+  }
+  @keyframes slideParaCima {
+    0% {
+      transform: translateX(0%);
+      filter: opacity(1);
+    }
+    100% {
+      transform: translateX(120%);
+      filter: opacity(0);
+      display: none;
+    }
+  }
+
+  .links li {
+    padding: 10px;
+    float: none;
+  }
 }

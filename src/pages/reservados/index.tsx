@@ -4,7 +4,7 @@ function Reservados() {
   return (
     <div className="container">
       <div className="content">
-        <h1>reservados</h1>
+        <h2>reservados</h2>
       </div>
     </div>
   );
