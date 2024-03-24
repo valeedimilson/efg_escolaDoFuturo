@@ -95,6 +95,7 @@ header div a:hover {
 
   .fechado {
     animation: slideParaCima 0.5s ease-out forwards;
+    animation-delay: 0.1s;
     display: flex;
   }
   @keyframes slideParaBaixo {
