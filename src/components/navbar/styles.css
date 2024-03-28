@@ -3,6 +3,8 @@
   --corFundoNavBar: rgb(240, 240, 240);
   --corFundoNavBarMenuMobile: rgb(240, 240, 240);
 
+  --altNavBar: 60px;
+
   --corLink: #002e6e;
   --corLinkMouseOver: #28b578;
   --corLinkPaginaAtual: #28b578;
@@ -13,9 +15,9 @@
 header {
   z-index: 999;
   display: flex;
-  width: 100vw;
+  width: 100%;
   min-width: 320px;
-  height: 60px;
+  height: var(--altNavBar);
 
   padding-left: 16px;
   padding-right: 16px;

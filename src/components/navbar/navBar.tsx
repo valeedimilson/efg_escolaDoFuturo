@@ -1,18 +1,13 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import "./styles.css";
 import logo from "./imgs/logo.svg";
 
 import { CgMenuRound } from "react-icons/cg";
 import { RiCloseCircleLine } from "react-icons/ri";
 
-import Rotas from "./Rotas";
-
-const rotas = Rotas();
+import Links from "./links";
 
 function NavBar() {
-  let paginaAtual = useLocation().pathname;
-
   const [menuAberto, setMenuAberto] = useState("menu");
 
   function toggle(menuAberto: String) {
@@ -59,21 +54,7 @@ function NavBar() {
       </div>
       <div className={menuAberto}>
         <div className="links">
-          <ul>
-            {rotas.map((rota, posicao) => (
-              <li key={posicao}>
-                <Link
-                  to={rota.url}
-                  onClick={function () {
-                    toggle("menu fechado");
-                  }}
-                  className={paginaAtual == rota.url ? "menuPaginaAtual" : ""}
-                >
-                  {rota.nome}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <Links />
         </div>
       </div>
     </header>
