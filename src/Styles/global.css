@@ -40,7 +40,7 @@ body {
 
 #root {
   width: 100%;
-  height: 100%;
+  height: calc(98vh - (var(--altNavBar) + var(--altFooter)));
 }
 
 .container {

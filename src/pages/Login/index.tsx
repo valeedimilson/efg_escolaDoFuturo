@@ -1,25 +1,45 @@
 import "./styles.css";
-
+import logoImage from "../../images/logo.svg";
 function Login() {
   return (
-    <div className="container">
+    <div className="containerLogin">
       <div className="content contentLogin">
-        <h2>Pagina de Login</h2>
-        <form action="/rotaParaLogarNoSistema" method="post">
-          <div>
-            <div>
-              <label>Usuário</label>
-              <input type="text" name="usuario" />
+        <div className="formLogin">
+          <form action="/rotaParaLogarNoSistema" method="post">
+            <div className="formTitulo">
+              <h2>Login</h2>
             </div>
             <div>
-              <label>Senha</label>
-              <input type="password" name="senha" />
+              <div>
+                <div className="ladoALado">
+                  <div>Usuario</div>
+                </div>
+                <input type="text" name="usuario" />
+              </div>
+              <br />
+              <div>
+                <div className="ladoALado">
+                  <div>Senha</div>
+                  <div>Esqueceu a senha?</div>
+                </div>
+                <input type="password" name="senha" />
+              </div>
+
+              <div>
+                <input type="checkbox" name="lembreme" /> Lembre-me
+              </div>
             </div>
-            <div>
-              <button type="submit">Entrar</button>
+            <div className="formLoginBt">
+              <button type="submit">Login</button>
             </div>
+          </form>
+          <div className="divNovaConta">
+            Se não tem uma conta? <a>clique aqui</a>
           </div>
-        </form>
+        </div>
+        <div>
+          <img src={logoImage} alt="Logo Site" id="logoImage" />
+        </div>
       </div>
     </div>
   );
