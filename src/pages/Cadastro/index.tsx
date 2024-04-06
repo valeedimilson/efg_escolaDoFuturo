@@ -1,36 +1,57 @@
 import "./styles.css";
-
-function Cadastro() {
+import logoImage from "../../images/logo.svg";
+function Login() {
   return (
-    <div className="container">
-      <div className="content">
-        <h2>Pagina de cadastro</h2>
-        <form action="/rotaParaCadastrarUsuario" method="post">
-          <div>
-            <div>
-              <label>Usuário: </label>
-              <input type="text" name="usuario" />
+    <div className="containerCadastro">
+      <div className="content contentCadastro">
+        <div className="formCadastro">
+          <form action="/rotaParaCadastroNoSistema" method="post">
+            <div className="formTitulo">
+              <h2>Cadastro</h2>
             </div>
             <div>
-              <label>Senha: </label>
-              <input type="password" name="senha" />
+              <div>
+                <div className="ladoALado">
+                  <div>Usuario</div>
+                </div>
+                <input type="text" name="usuario" />
+              </div>
+              <br />
+              <div>
+                <div className="ladoALado">
+                  <div>Email</div>
+                </div>
+                <input type="text" name="usuario" />
+              </div>
+              <br />
+              <div>
+                <div className="ladoALado">
+                  <div>Senha</div>
+                </div>
+                <input type="password" name="senha" />
+              </div>
+              <br />
+              <div>
+                <div className="ladoALado">
+                  <div>Confirme sua Senha</div>
+                </div>
+                <input type="password" name="senha" />
+              </div>
             </div>
-            <div>
-              <label>Email: </label>
-              <input type="text" name="usuario" />
+            <div className="formCadastroBt">
+              <button type="submit">Criar</button>
             </div>
-            <div>
-              <label>Telefone: </label>
-              <input type="text" name="usuario" />
-            </div>
-            <div>
-              <button type="submit">Cadastrar</button>
-            </div>
+          </form>
+          <div className="divNovaConta">
+            Já tem uma conta? <a>clique aqui</a>
           </div>
-        </form>
+        </div>
+        <div>
+          <img src={logoImage} alt="Logo Site" id="logoImage" />
+        </div>
       </div>
     </div>
   );
 }
 
-export default Cadastro;
+export default Login;

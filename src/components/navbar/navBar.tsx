@@ -6,6 +6,7 @@ import { CgMenuRound } from "react-icons/cg";
 import { RiCloseCircleLine } from "react-icons/ri";
 
 import Links from "./links";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [menuAberto, setMenuAberto] = useState("menu");
@@ -44,10 +45,12 @@ function NavBar() {
   return (
     <header>
       <div className="logo">
-        <img
-          src={logo}
-          alt="SIREAG - Sistema de Reserva de Ambientes na Escola do Futuro de Goiás"
-        />
+        <Link to="/">
+          <img
+            src={logo}
+            alt="SIREAG - Sistema de Reserva de Ambientes na Escola do Futuro de Goiás"
+          />
+        </Link>
       </div>
       <div className="menuMobile">
         <BtMobile />

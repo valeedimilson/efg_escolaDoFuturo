@@ -6,12 +6,8 @@
   justify-content: center;
   align-items: center;
 
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  text-size-adjust: none;
-
-  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .contentLogin {
   display: flex;
@@ -93,6 +89,7 @@
     padding-right: 0px;
   }
   .contentLogin #logoImage {
+    padding-top: 10px;
     width: 100%;
   }
 

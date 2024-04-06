@@ -1,0 +1,99 @@
+.containerCadastro {
+  background-image: linear-gradient(to bottom, #0f6c55 50%, #dcdcdc 50%);
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.contentCadastro {
+  display: flex;
+  max-width: 80%;
+  min-width: auto;
+  min-height: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+}
+.ladoALado {
+  display: flex;
+  justify-content: space-between;
+}
+.formCadastro {
+  width: 50%;
+}
+.formTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 20px;
+
+  font-size: 1.8rem;
+  color: #0f6c55;
+}
+.formCadastro input[type="text"],
+.formCadastro input[type="password"] {
+  width: 100%;
+  height: 35px;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: #dcdcdc;
+
+  color: #0f6c55;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+.formCadastroBt {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.formCadastroBt button {
+  width: 200px;
+  height: 50px;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: #0f6c55;
+
+  color: white;
+  font-size: 1.5rem;
+}
+.divNovaConta {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contentCadastro #logoImage {
+  width: 15rem;
+  object-fit: cover;
+}
+
+/*mobile*/
+@media (max-width: 425px) {
+  .contentCadastro h2 {
+    font-size: 25px;
+  }
+  .contentCadastro {
+    flex-direction: column-reverse;
+    font-size: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .contentCadastro #logoImage {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .formCadastro {
+    width: 85%;
+  }
+}
