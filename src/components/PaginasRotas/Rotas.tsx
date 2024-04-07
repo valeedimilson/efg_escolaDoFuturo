@@ -4,6 +4,7 @@ import Reserva from "../../pages/reserva";
 import Reservados from "../../pages/reservados";
 import Cadastro from "../../pages/Cadastro";
 import Login from "../../pages/Login";
+import EsqueceuSenha from "../../pages/EsqueceuSenha";
 
 function Rotas() {
   interface Rota {
@@ -37,6 +38,11 @@ function Rotas() {
       url: "/login",
       nome: "Login",
       elemento: <Login />,
+    },
+    {
+      url: "/esqueceusenha",
+      nome: "EsqueceuSenha",
+      elemento: <EsqueceuSenha />,
     },
   ];
 

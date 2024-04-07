@@ -1,5 +1,6 @@
 import "./styles.css";
 import logoImage from "../../images/logo.svg";
+import { Link } from "react-router-dom";
 function Login() {
   return (
     <div className="containerLogin">
@@ -20,7 +21,9 @@ function Login() {
               <div>
                 <div className="ladoALado">
                   <div>Senha</div>
-                  <div>Esqueceu a senha?</div>
+                  <div>
+                    <Link to="/esqueceusenha">Esqueceu a senha?</Link>
+                  </div>
                 </div>
                 <input type="password" name="senha" />
               </div>
@@ -34,7 +37,7 @@ function Login() {
             </div>
           </form>
           <div className="divNovaConta">
-            Se não tem uma conta? <a>clique aqui</a>
+            Não tem uma conta? <Link to="/cadastro">Clique aqui</Link>
           </div>
         </div>
         <div>

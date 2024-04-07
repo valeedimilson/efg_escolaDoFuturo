@@ -1,5 +1,6 @@
 import "./styles.css";
 import logoImage from "../../images/logo.svg";
+import { Link } from "react-router-dom";
 function Login() {
   return (
     <div className="containerCadastro">
@@ -43,7 +44,7 @@ function Login() {
             </div>
           </form>
           <div className="divNovaConta">
-            Já tem uma conta? <a>clique aqui</a>
+            Já tem uma conta? <Link to="/login">Clique aqui</Link>
           </div>
         </div>
         <div>

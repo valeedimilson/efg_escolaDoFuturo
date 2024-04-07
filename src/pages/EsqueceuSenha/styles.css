@@ -1,0 +1,120 @@
+.containerEsqueceuSenha {
+  background-image: linear-gradient(to bottom, #0f6c55 50%, #dcdcdc 50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.contentEsqueceuSenha {
+  display: flex;
+  max-width: 80%;
+  min-width: auto;
+  min-height: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 2rem;
+}
+.ladoALado {
+  display: flex;
+  justify-content: space-between;
+}
+.formEsqueceuSenha {
+  width: 50%;
+}
+.formTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 20px;
+
+  font-size: 1.8rem;
+  color: #0f6c55;
+}
+.formEsqueceuSenha input[type="text"],
+.formEsqueceuSenha input[type="password"] {
+  width: 100%;
+  height: 50px;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: #dcdcdc;
+
+  color: #0f6c55;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+.formEsqueceuSenhaBt {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.formEsqueceuSenhaBt button {
+  width: 200px;
+  height: 50px;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: #0f6c55;
+
+  color: white;
+  font-size: 1.5rem;
+}
+.divNovaConta {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.contentEsqueceuSenha #logoImage {
+  width: 15rem;
+  object-fit: cover;
+}
+
+/*mobile*/
+@media (max-width: 425px) {
+  .contentEsqueceuSenha h2 {
+    font-size: 25px;
+  }
+  .contentEsqueceuSenha {
+    flex-direction: column-reverse;
+    font-size: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .contentEsqueceuSenha #logoImage {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .formEsqueceuSenha {
+    width: 85%;
+  }
+}
+
+.palavraEntreLinhas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.palavraEntreLinhas::before,
+.palavraEntreLinhas::after {
+  content: "";
+  background-color: black;
+  width: 30%;
+  height: 1px;
+}
+.palavraEntreLinhas::before {
+  margin-right: 5px;
+}
+.palavraEntreLinhas::after {
+  margin-left: 5px;
+}
