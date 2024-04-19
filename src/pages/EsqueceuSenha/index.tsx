@@ -1,6 +1,7 @@
 import "./styles.css";
 import logoImage from "../../images/logo.svg";
 import { Link } from "react-router-dom";
+import validaEmail from "../../components/validaEmail";
 function EsqueceuSenha() {
   return (
     <div className="containerEsqueceuSenha">
@@ -20,7 +21,11 @@ function EsqueceuSenha() {
                 <div className="ladoALado">
                   <div>Email</div>
                 </div>
-                <input type="text" name="usuario" />
+                <input
+                  type="text"
+                  name="email"
+                  onChange={(e) => validaEmail(e)}
+                />
               </div>
               <br />
             </div>
