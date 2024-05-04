@@ -1,15 +1,13 @@
 import "./styles.css";
-import Card from "../../components/card/card"
+
+import Cards from "../../services/Api";
 
 function Reserva() {
   return (
     <div className="container">
       <div className="content">
         <h2>Reserva</h2>
-          <Card />
-          <Card />
-          <Card />
-
+        <Cards />
       </div>
     </div>
   );
