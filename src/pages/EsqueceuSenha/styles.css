@@ -77,7 +77,7 @@
 }
 
 /*mobile*/
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .contentEsqueceuSenha h2 {
     font-size: 25px;
   }

@@ -1,13 +1,22 @@
+import Card from "../../components/card/card";
+import Api from "../../services/Api";
 import "./styles.css";
 
-import Cards from "../../services/Api";
+const labs = Api();
 
 function Reserva() {
   return (
     <div className="container">
       <div className="content">
         <h2>Reserva</h2>
-        <Cards />
+        {labs.map((lab, i) => (
+          <Card
+            key={i}
+            lab_name={lab.response.lab_name}
+            lab_status={lab.response.lab_status}
+            user_ocupado={lab.response.user_ocupado}
+          />
+        ))}
       </div>
     </div>
   );
