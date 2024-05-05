@@ -46,11 +46,13 @@ body {
 
   width: auto;
   width: 100%;
+  height: auto;
 }
 
 #root {
   width: 100%;
-  height: calc(98vh - (var(--altNavBar) + var(--altFooter)));
+  height: auto;
+  /*height: calc(98vh - (var(--altNavBar) + var(--altFooter)));*/
 }
 
 .container {

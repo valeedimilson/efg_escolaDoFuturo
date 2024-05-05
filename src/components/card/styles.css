@@ -13,21 +13,6 @@
   justify-content: space-between;
   padding: 20px;
   margin: 2%;
-.card {
-  background-color: #218257;
-  color: white;
-  width: auto;
-  min-width: 300px;
-  height: 250px;
-  border: none;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 2%;
 }
 .card-btn {
   background-color: #31ea9786;
@@ -39,19 +24,7 @@
   justify-content: center;
   color: #f5f1f1;
   border-radius: 10px;
-.card-btn {
-  background-color: #31ea9786;
-  padding: 10px 10px;
-  height: auto;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: #f5f1f1;
-  border-radius: 10px;
 }
-.card-btn:hover {
-  background-color: #44c78c2b;
 .card-btn:hover {
   background-color: #44c78c2b;
 }
@@ -94,4 +67,5 @@
     padding-top: 6px;
     padding-bottom: 6px;
   }
+}
 }
