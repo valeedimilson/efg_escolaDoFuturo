@@ -40,26 +40,29 @@ a:hover {
 
 body {
   display: flex;
-  place-items: center;
+  /*place-items: center;*/
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
 
-  width: auto;
-  width: 100%;
-  height: auto;
+  /*width: auto;*/
+  width: 100vw;
+  height: 100vh;
+  
 }
 
 #root {
   width: 100%;
   height: auto;
-  /*height: calc(98vh - (var(--altNavBar) + var(--altFooter)));*/
+  min-height: calc(98vh - (var(--altNavBar) + var(--altFooter)));
+
 }
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  /*align-items: center;*/
+  /*min-height: calc(100vh - (var(--altNavBar) + var(--altFooter))*2);*/
+  min-height: calc(100vh/2 - (var(--altNavBar) + var(--altFooter)));
 }
 
 h1 {
