@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-function Links() {
+function Links(Props: any) {
   interface Rota {
     url: string;
     nome: string;
@@ -35,6 +35,7 @@ function Links() {
             <Link
               to={rota.url}
               className={paginaAtual == rota.url ? "menuPaginaAtual" : ""}
+              onClick={Props.onClick}
             >
               {rota.nome}
             </Link>

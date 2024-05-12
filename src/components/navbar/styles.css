@@ -1,6 +1,6 @@
 /*configuração das cores do NavBar*/
 :root {
-  --corFundoNavBar: rgb(240, 240, 240);
+  --corFundoNavBar: rgb(255, 255, 255);
   --corFundoNavBarMenuMobile: rgb(240, 240, 240);
 
   --altNavBar: 60px;
@@ -30,100 +30,125 @@ header {
   align-items: center;
 }
 
-header div {
-  display: flex;
-  align-items: center;
+.menuMobile,
+.menuMobileBtdiv {
+  display: none;
 }
-header div ul {
+
+.menuDesktop ul {
   list-style-type: none;
   float: left;
 }
-header div ul li {
+.menuDesktop ul li {
   float: left;
   padding-left: 8px;
 }
 
-header div a {
-  text-decoration: none;
-  color: var(--corLink);
-}
-
-header div a:hover {
-  text-decoration: underline;
-  color: var(--corLinkMouseOver);
-}
-.menuPaginaAtual {
-  text-decoration: underline;
-  color: var(--corLinkPaginaAtual);
-}
-.menuMobile {
-  display: none;
-}
-.menuMobileBt {
-  color: var(--corMenuMobileBt);
-}
-/*MediaQuery para correção em baixas resolução*/
-@media (max-width: 320px) {
-  .menuMobile {
-    max-width: 170px;
-  }
-}
-@media (max-width: 375px) {
-  .menuMobile {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-  }
-  .menu {
-    z-index: -999;
-    position: fixed;
-    top: 60px;
-    right: 0;
-
-    min-width: 60%;
-    max-width: 100%;
-    height: 100%;
-    background-color: var(--corFundoNavBarMenuMobile);
-
-    border-radius: 2% 0 2% 0;
-
+@media only screen and (max-width: 768px) {
+  .menuDesktop {
     display: none;
-    flex-direction: column;
-  }
-  .aberto {
-    animation: slideParaBaixo 0.5s ease-in forwards;
-    display: flex;
   }
 
-  .fechado {
-    animation: slideParaCima 0.5s ease-out forwards;
-    animation-delay: 0.1s;
+  .menuMobileBg {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    background-color: black;
+    opacity: 0.7;
+
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+  }
+  .menuMobile {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    width: 200px;
+    height: 100vh;
+
     display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: white;
+
+    border-radius: 20px 0px 0px 0px;
+
+    animation-name: slideIn;
+    animation-duration: 0.5s;
   }
-  @keyframes slideParaBaixo {
+
+  .menuMobileBgOculto {
+    animation-name: fadeOut;
+    animation-duration: 0.5s;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .menuMobileOculto {
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  .menuMobile li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .menuMobileBtdiv {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+  }
+
+  /* The animation code */
+  @keyframes slideIn {
+    from {
+      right: -200px;
+    }
+    to {
+      right: 0;
+    }
+  }
+  @keyframes slideOut {
     0% {
-      transform: translateX(120%);
-      filter: opacity(0);
+      right: 0;
+    }
+    99% {
+      right: -200px;
     }
     100% {
-      transform: translateX(0%);
-      filter: opacity(1);
-    }
-  }
-  @keyframes slideParaCima {
-    0% {
-      transform: translateX(0%);
-      filter: opacity(1);
-    }
-    100% {
-      transform: translateX(120%);
-      filter: opacity(0);
       display: none;
     }
   }
 
-  .links li {
-    padding: 10px;
-    float: none;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.7;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 0.7;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      display: none;
+    }
   }
 }
