@@ -1,10 +1,29 @@
+import { useEffect, useState } from "react";
 import Card from "../../components/card/card";
-import Api from "../../services/Api";
 import "./styles.css";
 
-const labs = Api();
-
+interface Lab {
+  id: number;
+  lab_name: string;
+  lab_status: string;
+  user_ocupado: string;
+}
 function Reserva() {
+  const [labs, setLabs] = useState<Lab[]>([]);
+  
+  useEffect(() => {
+    fetch("https://sireag.squareweb.app/sireag/lab/find/all/")
+      .then((resp) => resp.json())
+      .then((data: any) => {
+        setLabs(data.response);
+        console.log(data.response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+
   return (
     <div className="container">
       <div className="content">
@@ -12,14 +31,19 @@ function Reserva() {
           <h2>Reserva</h2>
         </div>
         <div className="labs">
-          {labs.map((lab, i) => (
-            <Card
-              key={i}
-              lab_name={lab.response.lab_name}
-              lab_status={lab.response.lab_status}
-              user_ocupado={lab.response.user_ocupado}
-            />
-          ))}
+          {labs.length > 0
+            ? labs.map((lab, i) => {
+                return (
+                  <Card
+                    key={i}
+                    id={lab.id}
+                    lab_name={lab.lab_name}
+                    lab_status={lab.lab_status}
+                    user_ocupado={lab.user_ocupado}
+                  />
+                );
+              })
+            : "Carregando Labs..."}
         </div>
       </div>
     </div>

@@ -13,10 +13,10 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const menuMobile = document.querySelector("#menuMobile");
   const menuMobileBg = document.querySelector("#menuMobileBg");
-  const [estadoMenu, setEstadoMenu] = useState(false);
+  const [menuMobileAberto, setMenuMobileAberto] = useState(false);
 
   function Botao() {
-    if (estadoMenu == false) {
+    if (menuMobileAberto == false) {
       return (
         <IoEllipsisVerticalCircleOutline
           size="30"
@@ -41,22 +41,27 @@ function NavBar() {
 
   function abreFechaMenu(estado?: boolean) {
     if (estado == false) {
-      setEstadoMenu(false);
+      setMenuMobileAberto(false);
     } else {
-      setEstadoMenu(!estadoMenu);
+      setMenuMobileAberto(!menuMobileAberto);
     }
-    console.log(estadoMenu);
   }
 
   useEffect(() => {
-    if (estadoMenu) {
-      menuMobile?.classList.remove("menuMobileOculto");
-      menuMobileBg?.classList.remove("menuMobileBgOculto");
+    if (menuMobileAberto) {
+      menuMobile?.classList.add("menuMobileShow");
+      menuMobileBg?.classList.add("menuMobileBgShow");
+
+      menuMobile?.classList.remove("menuMobileHidden");
+      menuMobileBg?.classList.remove("menuMobileBgHidden");
     } else {
-      menuMobile?.classList.add("menuMobileOculto");
-      menuMobileBg?.classList.add("menuMobileBgOculto");
+      menuMobile?.classList.remove("menuMobileShow");
+      menuMobileBg?.classList.remove("menuMobileBgShow");
+
+      menuMobile?.classList.add("menuMobileHidden");
+      menuMobileBg?.classList.add("menuMobileBgHidden");
     }
-  }, [estadoMenu]);
+  }, [menuMobileAberto]);
   return (
     <header>
       <Link
@@ -74,13 +79,13 @@ function NavBar() {
         <Links />
       </div>
       <div
-        className="menuMobileBg menuMobileBgOculto"
+        className="menuMobileBg"
         id="menuMobileBg"
         onClick={function () {
           abreFechaMenu(false);
         }}
       ></div>
-      <div className="menuMobile menuMobileOculto" id="menuMobile">
+      <div className="menuMobile" id="menuMobile">
         <div>
           <Links
             onClick={function () {
