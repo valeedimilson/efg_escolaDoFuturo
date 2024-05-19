@@ -1,6 +1,18 @@
 import { useEffect, useState } from "react";
 import Card from "../../components/card/card";
 import "./styles.css";
+import logo from "../../images/logo.svg";
+
+function Loading() {
+  return (
+    <div className="carregando">
+      <div className="spinner">
+        <img src={logo} />
+      </div>
+      <div>Carregando...</div>
+    </div>
+  );
+}
 
 interface Lab {
   id: number;
@@ -10,7 +22,7 @@ interface Lab {
 }
 function Reserva() {
   const [labs, setLabs] = useState<Lab[]>([]);
-  
+
   useEffect(() => {
     fetch("https://sireag.squareweb.app/sireag/lab/find/all/")
       .then((resp) => resp.json())
@@ -23,7 +35,6 @@ function Reserva() {
       });
   }, []);
 
-
   return (
     <div className="container">
       <div className="content">
@@ -31,19 +42,21 @@ function Reserva() {
           <h2>Reserva</h2>
         </div>
         <div className="labs">
-          {labs.length > 0
-            ? labs.map((lab, i) => {
-                return (
-                  <Card
-                    key={i}
-                    id={lab.id}
-                    lab_name={lab.lab_name}
-                    lab_status={lab.lab_status}
-                    user_ocupado={lab.user_ocupado}
-                  />
-                );
-              })
-            : "Carregando Labs..."}
+          {labs.length > 0 ? (
+            labs.map((lab, i) => {
+              return (
+                <Card
+                  key={i}
+                  id={lab.id}
+                  lab_name={lab.lab_name}
+                  lab_status={lab.lab_status}
+                  user_ocupado={lab.user_ocupado}
+                />
+              );
+            })
+          ) : (
+            <Loading />
+          )}
         </div>
       </div>
     </div>
