@@ -1,0 +1,11 @@
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+h2{
+    padding: 20px;
+    padding-left: 50px;
+}

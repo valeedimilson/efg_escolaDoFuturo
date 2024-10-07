@@ -24,7 +24,7 @@ function Reserva() {
   const [labs, setLabs] = useState<Lab[]>([]);
 
   useEffect(() => {
-    fetch("https://sireag.squareweb.app/sireag/lab/find/all/")
+    fetch("src\data.json")
       .then((resp) => resp.json())
       .then((data: any) => {
         setLabs(data.response);
@@ -34,6 +34,19 @@ function Reserva() {
         console.log(err);
       });
   }, []);
+
+
+  // useEffect(() => {
+  //   fetch("https://sireag.squareweb.app/sireag/lab/find/all/")
+  //     .then((resp) => resp.json())
+  //     .then((data: any) => {
+  //       setLabs(data.response);
+  //       console.log(data.response);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
 
   return (
     <div className="container">
@@ -48,9 +61,16 @@ function Reserva() {
                 <Card
                   key={i}
                   id={lab.id}
-                  lab_name={lab.lab_name}
-                  lab_status={lab.lab_status}
-                  user_ocupado={lab.user_ocupado}
+                  lab_name="Informática"
+                  imageSala="src\images\imageTeste.png"
+                  user_ocupado="de 00h00 as 23h00"
+                  responsavel="John_2"
+                  turma="3ºB"
+                  componente="Front-End"
+                  /*lab_status=""
+                  user_ocupado={lab.user_ocupado}*/
+                  
+
                 />
               );
             })

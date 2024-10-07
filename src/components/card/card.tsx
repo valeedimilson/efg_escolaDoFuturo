@@ -6,14 +6,15 @@ function Card(Props: any) {
     <>
       <section className="container">
         <div className="card">
-          <h3>{Props.lab_name}</h3>
-          <p>Status: {Props.lab_status}</p>
-          <p>Ocupado: {Props.user_ocupado}</p>
-          <p>Responsável: nome?</p>
-          <p>07:30 - 17:00</p>
-          <div className="card-btn">
+          <h3>{Props.lab_name} Lab Informatica</h3>
+          <p><img src={Props.imagemSala} width={"100%"}/></p>
+
+          <p>horario: {Props.user_ocupado} de 00h00 as 23h00</p>
+          <p>Responsável: {Props.responsavel}JohnJohn</p>
+          <p>Turma: {Props.turma}3º B - {Props.componente}FrontEnd</p>
+          {/* <div className="card-btn">
             <Link to="/Reservado">Agendar</Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

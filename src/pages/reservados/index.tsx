@@ -5,10 +5,13 @@ function Reservados() {
   return (
     <div className="container">
       <div className="content">
-        <h2>Reservados</h2>
+        <h2>Laboratorios e Salas:</h2>
+        <div className="cards">
+          <Card />
         <Card />
         <Card />
         <Card />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "lab_name": "Informdfsfdsdfsática",
+      "imageSala": "src/images/imageTeste.png",
+      "user_ocupado": "de 00h00 as 23h00",
+      "responsavel": "Johghhhhn_2",
+      "turma": "3ºB",
+      "componente": "Front-End"
+    },
+    {
+      "id": 2,
+      "lab_name": "Informát888888ica",
+      "imageSala": "src/images/imageTeste.png",
+      "user_ocupado": "de 00h00 as 23h00",
+      "responsavel": "Johssssssssssn_2",
+      "turma": "3ºB",
+      "componente": "Front-End"
+    },
+    {
+      "id": 3,
+      "lab_name": "Inform222222222ática",
+      "imageSala": "src/images/imageTeste.png",
+      "user_ocupado": "de 00h00 as 23h00",
+      "responsavel": "Johndsfsdf_2",
+      "turma": "3ºB",
+      "componente": "Front-End"
+    }
+  ]

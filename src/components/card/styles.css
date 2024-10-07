@@ -2,8 +2,8 @@
   background-color: #218257;
   color: white;
   width: auto;
-  min-width: 300px;
-  height: 250px;
+  min-width: 100%;
+  /* height: 250px; */
   border: none;
   border-radius: 10px;
   display: flex;
@@ -29,7 +29,7 @@
   background-color: #44c78c2b;
 }
 /*mobile*/
-@media (max-width: 425px) {
+@media all and (max-width: 425px) {
   .card {
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@
     padding-top: 6px;
     padding-bottom: 6px;
   }
-@media (max-width: 425px) {
+@media all and  (max-width: 425px) {
   .card {
     display: flex;
     flex-direction: column;
