@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "lab_name": "Laboratorio Informatica",
+    "imagemSala": "src/images/imageTeste.png",
+    "user_ocupado": "de 00h00 as 23h00",
+    "responsavel": "John",
+    "turma": "3ºB",
+    "componente": "Front-End"
+  },
+  {
+    "id": 2,
+    "lab_name": "Laboratorio E-Sports",
+    "imagemSala": "src/images/imageTeste.png",
+    "user_ocupado": "de 00h00 as 23h00",
+    "responsavel": "João",
+    "turma": "0ºB",
+    "componente": "Marketing"
+  },
+  {
+    "id": 3,
+    "lab_name": "Laboratorio Automação",
+    "imagemSala": "src/images/imageTeste.png",
+    "user_ocupado": "de 00h00 as 23h00",
+    "responsavel": "Maria",
+    "turma": "0ºB",
+    "componente": "UX"
+  },
+  {
+    "id": 4,
+    "lab_name": "i9 / Coworking",
+    "imagemSala": "src/images/imageTeste.png",
+    "user_ocupado": "de 00h00 as 23h00",
+    "responsavel": "Antonio",
+    "turma": "0ºB",
+    "componente": "Inovação"
+  },
+  {
+    "id": 5,
+    "lab_name": "LAB Robotica",
+    "imagemSala": "src/images/imageTeste.png",
+    "user_ocupado": "de 00h00 as 23h00",
+    "responsavel": "Marcos",
+    "turma": "0ºB",
+    "componente": "Inovação"
+  }
+]
