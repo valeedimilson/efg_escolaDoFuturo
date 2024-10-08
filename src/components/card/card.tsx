@@ -6,7 +6,7 @@ function Card(Props: any) {
       <section className="container">
         <div className="card">
           <h3>{Props.lab_name}</h3>
-          <p><img src={Props.imagemSala} width={"100%"}/></p>
+          <p><img src={Props.imageSala} width={"100%"}/></p>
 
           <p>horario: {Props.user_ocupado}</p>
           <p>Responsável: {Props.responsavel}</p>
