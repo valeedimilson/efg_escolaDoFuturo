@@ -1,7 +1,7 @@
 import "./styles.css";
 import Card from "../../components/card/card";
 
-function Reservados() {
+function Reserva() {
   const labs = [
     {
       lab_name: "Laboratório 1",
@@ -62,7 +62,7 @@ function Reservados() {
   );
 }
 
-export default Reservados;
+export default Reserva;
 
 
 // import { useEffect, useState } from "react";
