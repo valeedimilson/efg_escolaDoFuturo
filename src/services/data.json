@@ -29,7 +29,7 @@
   {
     "id": 4,
     "lab_name": "i9 / Coworking",
-    "imagemSala": "src\\images\\imageTeste.png",
+    "imagemSala": "src/images/imageTeste.png",
     "user_ocupado": "de 00h00 as 23h00",
     "responsavel": "Antonio",
     "turma": "0ºB",

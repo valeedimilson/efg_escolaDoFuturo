@@ -28,7 +28,7 @@ function Reserva() {
   const [labs, setLabs] = useState<Lab[]>([]);
 
   useEffect(() => {
-    fetch("src\services\data.json")
+    fetch("src/services/data.json")
       .then((resp) => resp.json())
       .then((data: any) => {
         setLabs(data);
