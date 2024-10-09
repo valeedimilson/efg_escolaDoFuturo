@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import Card from "../../components/card/card";
 
+import imagemTeste from "../../images/imageTeste.png";
+
 // Definição da interface para os dados dos laboratórios
 interface Lab {
   lab_name: string;
@@ -55,7 +57,7 @@ const diaSemanaTexto = ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SAB"];
 const labs: Lab[] = [
   {
     lab_name: ambientes[12],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "SEG, 13:25 - 15:05",
     responsavel: professores[0],
     turma: turmas[0],
@@ -63,7 +65,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[11],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "SEG, 15:20 - 16:10",
     responsavel: professores[3],
     turma: turmas[0],
@@ -71,7 +73,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[15],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "SEG, 16:10 - 17:00",
     responsavel: professores[4],
     turma: turmas[0],
@@ -79,7 +81,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[15],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUA, 13:25 - 14:15",
     responsavel: professores[4],
     turma: turmas[0],
@@ -87,7 +89,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[12],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUA, 14:15 - 16:10",
     responsavel: professores[0],
     turma: turmas[0],
@@ -95,7 +97,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[11],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUA, 14:15 - 16:10",
     responsavel: professores[3],
     turma: turmas[0],
@@ -103,7 +105,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[12],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 13:25 - 16:10",
     responsavel: professores[0],
     turma: turmas[0],
@@ -111,7 +113,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[12],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 16:10 - 17:00",
     responsavel: professores[6],
     turma: turmas[0],
@@ -119,7 +121,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[11],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "SEG, 13:25 - 14:15",
     responsavel: professores[3],
     turma: turmas[1],
@@ -127,7 +129,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[13],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "SEG, 14:15 - 17:00",
     responsavel: professores[1],
     turma: turmas[1],
@@ -135,7 +137,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[11],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUA, 08:25 - 14:15",
     responsavel: professores[3],
     turma: turmas[1],
@@ -143,7 +145,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[0],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUA, 14:15 - 15:05",
     responsavel: professores[6],
     turma: turmas[1],
@@ -151,7 +153,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[13],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUA, 15:20 - 17:00",
     responsavel: professores[1],
     turma: turmas[1],
@@ -159,7 +161,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[13],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 13:25 - 15:05",
     responsavel: professores[1],
     turma: turmas[1],
@@ -167,7 +169,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[15],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 15:20 - 16:10",
     responsavel: professores[4],
     turma: turmas[1],
@@ -175,7 +177,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[15],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 15:20 - 16:10",
     responsavel: professores[4],
     turma: turmas[1],
@@ -183,7 +185,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[9],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "SEG, 13:25 - 17:00",
     responsavel: professores[2],
     turma: turmas[2],
@@ -191,7 +193,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[9],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUA, 13:25 - 15:05",
     responsavel: professores[2],
     turma: turmas[2],
@@ -199,7 +201,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[5],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUA, 15:20 - 17:00",
     responsavel: professores[5],
     turma: turmas[2],
@@ -207,7 +209,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[15],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 13:25 - 14:15",
     responsavel: professores[4],
     turma: turmas[2],
@@ -215,7 +217,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[15],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 14:15 - 15:05",
     responsavel: professores[4],
     turma: turmas[2],
@@ -223,7 +225,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[0],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 15:20 - 16:10",
     responsavel: professores[6],
     turma: turmas[2],
@@ -231,7 +233,7 @@ const labs: Lab[] = [
   },
   {
     lab_name: ambientes[12],
-    imageSala: "src/images/imageTeste.png",
+    imageSala: imagemTeste,
     aulaHorario: "QUI, 16:10 - 17:00",
     responsavel: professores[0],
     turma: turmas[2],
