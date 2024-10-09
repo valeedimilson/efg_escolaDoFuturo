@@ -24,6 +24,17 @@
   transform-origin: center;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .filter{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
 @keyframes spinner-8k6ao5md {
   0% {
     transform: perspective(224px) rotateY(0deg);

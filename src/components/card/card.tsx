@@ -8,7 +8,7 @@ function Card(Props: any) {
           <h3>{Props.lab_name}</h3>
           <p><img src={Props.imageSala} width={"100%"}/></p>
 
-          <p>horario: {Props.user_ocupado}</p>
+          <p>horario: {Props.aulaHorario}</p>
           <p>Responsável: {Props.responsavel}</p>
           <p>Turma: {Props.turma} - {Props.componente}</p>
           {/* <div className="card-btn">

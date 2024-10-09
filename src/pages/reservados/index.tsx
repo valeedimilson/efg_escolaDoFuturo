@@ -8,9 +8,9 @@ function Reservados() {
         <h2>Laboratorios e Salas:</h2>
         <div className="cards">
           <Card />
-        <Card />
-        <Card />
-        <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </div>
