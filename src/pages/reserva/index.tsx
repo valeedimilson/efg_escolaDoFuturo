@@ -181,6 +181,62 @@ const labs: Lab[] = [
     turma: turmas[1],
     componente: componentes[1],
   },
+  {
+    lab_name: ambientes[9],
+    imageSala: "src/images/imageTeste.png",
+    aulaHorario: "SEG, 13:25 - 17:00",
+    responsavel: professores[2],
+    turma: turmas[2],
+    componente: componentes[0],
+  },
+  {
+    lab_name: ambientes[9],
+    imageSala: "src/images/imageTeste.png",
+    aulaHorario: "QUA, 13:25 - 15:05",
+    responsavel: professores[2],
+    turma: turmas[2],
+    componente: componentes[0],
+  },
+  {
+    lab_name: ambientes[5],
+    imageSala: "src/images/imageTeste.png",
+    aulaHorario: "QUA, 15:20 - 17:00",
+    responsavel: professores[5],
+    turma: turmas[2],
+    componente: componentes[4],
+  },
+  {
+    lab_name: ambientes[15],
+    imageSala: "src/images/imageTeste.png",
+    aulaHorario: "QUI, 13:25 - 14:15",
+    responsavel: professores[4],
+    turma: turmas[2],
+    componente: componentes[1],
+  },
+  {
+    lab_name: ambientes[15],
+    imageSala: "src/images/imageTeste.png",
+    aulaHorario: "QUI, 14:15 - 15:05",
+    responsavel: professores[4],
+    turma: turmas[2],
+    componente: componentes[1],
+  },
+  {
+    lab_name: ambientes[0],
+    imageSala: "src/images/imageTeste.png",
+    aulaHorario: "QUI, 15:20 - 16:10",
+    responsavel: professores[6],
+    turma: turmas[2],
+    componente: componentes[2],
+  },
+  {
+    lab_name: ambientes[12],
+    imageSala: "src/images/imageTeste.png",
+    aulaHorario: "QUI, 16:10 - 17:00",
+    responsavel: professores[0],
+    turma: turmas[2],
+    componente: componentes[0],
+  }
 ];
 
 const timeToMinutes = (time: string): number => {
