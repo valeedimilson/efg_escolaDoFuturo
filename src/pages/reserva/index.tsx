@@ -136,7 +136,7 @@ const labs: Lab[] = [
   {
     lab_name: ambientes[11],
     imageSala: "src/images/imageTeste.png",
-    aulaHorario: "QUA, 13:25 - 14:15",
+    aulaHorario: "QUA, 08:25 - 14:15",
     responsavel: professores[3],
     turma: turmas[1],
     componente: componentes[4],
@@ -284,7 +284,7 @@ const Reserva: React.FC = () => {
   useEffect(() => {
     const agora = new Date();
     const horario = agora.getHours();
-    const minutos = agora.getMinutes();
+    // const minutos = agora.getMinutes();
 
     if (horario < 12) {
       setStartTime("07:00");
