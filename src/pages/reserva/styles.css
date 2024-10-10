@@ -48,6 +48,23 @@
   
 }
 
+.turmas-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.turma-column {
+  flex: 1;
+  min-width: 200px; /* Largura mínima para cada coluna */
+  margin: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+
 @keyframes spinner-8k6ao5md {
   0% {
     transform: perspective(224px) rotateY(0deg);

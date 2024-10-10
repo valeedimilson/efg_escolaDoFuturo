@@ -8,22 +8,22 @@ function Links(Props: any) {
 
   //JSON com os links a serem inseridos no NAVBAR (pode ser inserido de um banco de dados tambem)
   const rotas: Rota[] = [
-    {
-      url: "/",
-      nome: "Home",
-    },
-    {
-      url: "/reservado",
-      nome: "Reservado",
-    },
+    // {
+    //   url: "/",
+    //   nome: "Home",
+    // },
     {
       url: "/reserva",
-      nome: "Reserva",
+      nome: "Home",
     },
-    {
-      url: "/cadastro",
-      nome: "Cadastro",
-    },
+    // {
+    //   url: "/reserva",
+    //   nome: "Reserva",
+    // },
+    // {
+    //   url: "/cadastro",
+    //   nome: "Cadastro",
+    // },
   ];
 
   let paginaAtual = useLocation().pathname; //retorna a rota atual
