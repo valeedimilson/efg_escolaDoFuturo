@@ -24,15 +24,28 @@
   transform-origin: center;
 }
 
-.container{
+.container {
   display: flex;
-  flex-direction: column;
- }
+  /* flex-direction: column; */
 
- .filter{
+  max-width: 100%;
+  min-height: 100%;
+  flex-wrap: wrap;
+}
+
+.filter {
   display: flex;
   justify-content: center;
   padding: 10px;
+  text-align: center;
+}
+.filter input {
+  width: 100%;
+}
+.filter label {
+  padding-left: 2px;
+  padding-right: 2px;
+  
 }
 
 @keyframes spinner-8k6ao5md {

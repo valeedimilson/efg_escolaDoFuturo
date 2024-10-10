@@ -49,71 +49,6 @@ header {
     display: none;
   }
 
-  .menuMobileBg {
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-
-    background-color: black;
-    opacity: 0;
-  }
-  .menuMobile {
-    position: absolute;
-    top: 0px;
-    right: -200px;
-
-    width: 200px;
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    background-color: white;
-
-    border-radius: 20px 0px 0px 0px;
-  }
-
-  .menuMobileBgShow {
-    animation-name: fadeIn;
-    animation-duration: 0.5s;
-
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  .menuMobileShow {
-    animation-name: slideIn;
-    animation-duration: 0.5s;
-
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  .menuMobileBgHidden {
-    animation-name: fadeOut;
-    animation-duration: 0.5s;
-
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  .menuMobileHidden {
-    animation-name: slideOut;
-    animation-duration: 0.5s;
-
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-
-  .menuMobile li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
   .menuMobileBtdiv {
     display: block;
     position: absolute;
@@ -121,38 +56,51 @@ header {
     right: 15px;
   }
 
-  /* The animation code */
-  @keyframes slideIn {
-    from {
-      right: -200px;
-    }
-    to {
-      right: 0px;
-    }
-  }
-  @keyframes slideOut {
-    0% {
-      right: 0;
-    }
-    100% {
-      right: -200px;
-    }
+  .menuMobileBg,
+  .menuMobile,
+  .menuMobileShow {
+    transition: all 0.5s ease-in-out;
   }
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0.7;
-    }
+  .menuMobileBg {
+    display: flex;
+
+    visibility: hidden;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    background-color: rgba(0, 0, 0, 0);
   }
-  @keyframes fadeOut {
-    0% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+}
+
+.menuMobile {
+  position: fixed;
+  top: 0px;
+  right: -200px;
+
+  width: 200px;
+  height: 100vh;
+
+  display: flex;
+  visibility: hidden;
+
+  justify-content: center;
+  padding-top: 50px;
+  background-color: white !important;
+
+  border-radius: 20px 0px 0px 0px;
+}
+.menuMobile li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menuMobileShow {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.8);
+  right: 0px;
 }
