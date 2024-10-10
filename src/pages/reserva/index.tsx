@@ -257,6 +257,14 @@ const labs: Lab[] = [
     turma: turmas[2],
     componente: componentes[0],
   },
+  {
+    lab_name: ambientes[12],
+    imageSala: imagemTeste,
+    aulaHorario: "QUI, 10:10 - 11:00",
+    responsavel: professores[0],
+    turma: turmas[2],
+    componente: componentes[0],
+  },
 ];
 
 const timeToMinutes = (time: string): number => {
@@ -344,6 +352,8 @@ const Reserva: React.FC = () => {
     endTime,
   });
 
+  const hasFilteredLabs = filteredLabs.length > 0;
+
   return (
     <div className="container">
       <div className="filter">
@@ -424,10 +434,14 @@ const Reserva: React.FC = () => {
             </div>
           ) : (
             turmas.map((turma) => (
+              filteredLabs.filter((lab) => lab.turma === turma)
+                .length > 0 && hasFilteredLabs && (
+                
               <div className="turma-column" key={turma}>
                 <h3>{turma}</h3>
                 <div className="cards">
-                  {filteredLabs
+                  {
+                  filteredLabs
                     .filter((lab) => lab.turma === turma)
                     .map((lab, index) => (
                       <Card
@@ -438,11 +452,16 @@ const Reserva: React.FC = () => {
                         responsavel={lab.responsavel}
                         componente={lab.componente}
                       />
+                      
                     ))}
                 </div>
               </div>
-            ))
+            )))
           )}
+            {/* Mensagem única quando não há laboratórios filtrados */}
+  {!hasFilteredLabs && (
+    <p>Não há aulas disponíveis para as turmas neste dia e horário.</p>
+  )}
         </div>
       </div>
     </div>
