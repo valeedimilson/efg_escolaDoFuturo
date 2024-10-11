@@ -126,19 +126,21 @@ const Reserva: React.FC = () => {
   const hasFilteredLabs = filteredLabs.length > 0;
 
   try {
-    const cards = document.querySelectorAll(".card");
-    let maxHeight = 0;
-    cards.forEach((card) => {
-      // @ts-ignore
-      const cardHeight = card.offsetHeight;
-      if (cardHeight > maxHeight) {
-        maxHeight = cardHeight;
-      }
-    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll(".card");
+      let maxHeight = 0;
+      cards.forEach((card) => {
+        // @ts-ignore
+        const cardHeight = card.offsetHeight;
+        if (cardHeight > maxHeight) {
+          maxHeight = cardHeight;
+        }
+      });
 
-    cards.forEach((card) => {
-      // @ts-ignore
-      card.style.height = `${maxHeight}px`;
+      cards.forEach((card) => {
+        // @ts-ignore
+        card.style.height = `${maxHeight}px`;
+      });
     });
   } catch (error) {
     console.error("Erro ao definir alturas dos cards:", error);

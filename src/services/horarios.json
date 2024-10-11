@@ -1,14 +1,14 @@
 [
   {
-    "lab_name": "Sala 12",
-	"imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "lab_name": "Laboratório de Informática",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "SEG, 13:25 - 15:05",
     "responsavel": "Dev Johnattan",
     "turma": "1° ano A",
     "componente": "FRONT-END"
   },
   {
-    "lab_name": "Sala 11",
+    "lab_name": "Sala 12",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "SEG, 15:20 - 16:10",
     "responsavel": "Juliana",
@@ -16,7 +16,7 @@
     "componente": "PRAT. PROFISSIONAL"
   },
   {
-    "lab_name": "Sala 15",
+    "lab_name": "Laboratório de Eletrônica",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "SEG, 16:10 - 17:00",
     "responsavel": "Emily",
@@ -24,7 +24,7 @@
     "componente": "UI E UX"
   },
   {
-    "lab_name": "Sala 15",
+    "lab_name": "Laboratório de Eletrônica",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUA, 13:25 - 14:15",
     "responsavel": "Emily",
@@ -32,7 +32,7 @@
     "componente": "TEC. LOG. SOC."
   },
   {
-    "lab_name": "Sala 12",
+    "lab_name": "Laboratório de Informática",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUA, 14:15 - 16:10",
     "responsavel": "Dev Johnattan",
@@ -40,7 +40,7 @@
     "componente": "FRONT-END"
   },
   {
-    "lab_name": "Sala 11",
+    "lab_name": "Sala 12",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUA, 14:15 - 16:10",
     "responsavel": "Juliana",
@@ -48,7 +48,7 @@
     "componente": "PRAT. PROFISSIONAL"
   },
   {
-    "lab_name": "Sala 12",
+    "lab_name": "Laboratório de Informática",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUI, 13:25 - 16:10",
     "responsavel": "Dev Johnattan",
@@ -56,15 +56,15 @@
     "componente": "FRONT-END"
   },
   {
-    "lab_name": "Sala 12",
+    "lab_name": "Laboratório de Informática",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUI, 16:10 - 17:00",
     "responsavel": "Dionísio",
     "turma": "1° ano A",
-    "componente": "UI E UX"
+    "componente": "PROJ. INTEG."
   },
   {
-    "lab_name": "Sala 11",
+    "lab_name": "Sala 12",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "SEG, 13:25 - 14:15",
     "responsavel": "Juliana",
@@ -72,7 +72,7 @@
     "componente": "PRAT. PROFISSIONAL"
   },
   {
-    "lab_name": "Sala 13",
+    "lab_name": "Laboratório E-Sports",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "SEG, 14:15 - 17:00",
     "responsavel": "Maurizio",
@@ -80,7 +80,7 @@
     "componente": "FRONT-END"
   },
   {
-    "lab_name": "Sala 11",
+    "lab_name": "Sala 12",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUA, 08:25 - 14:15",
     "responsavel": "Juliana",
@@ -93,10 +93,10 @@
     "aulaHorario": "QUA, 14:15 - 15:05",
     "responsavel": "Dionísio",
     "turma": "1° ano B",
-    "componente": "UI E UX"
+    "componente": "PROJ. INTEG."
   },
   {
-    "lab_name": "Sala 13",
+    "lab_name": "Laboratório E-Sports",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUA, 15:20 - 17:00",
     "responsavel": "Maurizio",
@@ -104,7 +104,7 @@
     "componente": "FRONT-END"
   },
   {
-    "lab_name": "Sala 13",
+    "lab_name": "Laboratório E-Sports",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUI, 13:25 - 15:05",
     "responsavel": "Maurizio",
@@ -112,7 +112,7 @@
     "componente": "FRONT-END"
   },
   {
-    "lab_name": "Sala 15",
+    "lab_name": "Laboratório de Eletrônica",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUI, 15:20 - 16:10",
     "responsavel": "Emily",
@@ -120,7 +120,7 @@
     "componente": "TEC. LOG. SOC."
   },
   {
-    "lab_name": "Sala 15",
+    "lab_name": "Laboratório de Eletrônica",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUI, 15:20 - 16:10",
     "responsavel": "Emily",
@@ -128,7 +128,7 @@
     "componente": "UI E UX"
   },
   {
-    "lab_name": "Sala 09",
+    "lab_name": "Sala 10",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "SEG, 13:25 - 17:00",
     "responsavel": "Edgar",
@@ -136,7 +136,7 @@
     "componente": "FRONT-END"
   },
   {
-    "lab_name": "Sala 09",
+    "lab_name": "Sala 10",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUA, 13:25 - 15:05",
     "responsavel": "Edgar",
@@ -144,7 +144,7 @@
     "componente": "FRONT-END"
   },
   {
-    "lab_name": "Sala 05",
+    "lab_name": "Sala 06",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUA, 15:20 - 17:00",
     "responsavel": "Karla",
@@ -152,7 +152,7 @@
     "componente": "PRAT. PROFISSIONAL"
   },
   {
-    "lab_name": "Sala 15",
+    "lab_name": "Laboratório de Eletrônica",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUI, 13:25 - 14:15",
     "responsavel": "Emily",
@@ -160,7 +160,7 @@
     "componente": "UI E UX"
   },
   {
-    "lab_name": "Sala 15",
+    "lab_name": "Laboratório de Eletrônica",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUI, 14:15 - 15:05",
     "responsavel": "Emily",
@@ -173,14 +173,288 @@
     "aulaHorario": "QUI, 15:20 - 16:10",
     "responsavel": "Dionísio",
     "turma": "1° ano C",
-    "componente": "FRONT-END"
+    "componente": "PROJ. INTEG."
   },
   {
-    "lab_name": "Sala 12",
+    "lab_name": "Laboratório de Informática",
     "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
     "aulaHorario": "QUI, 16:10 - 17:00",
     "responsavel": "Dev Johnattan",
     "turma": "1° ano C",
     "componente": "FRONT-END"
+  },
+    {
+    "lab_name": "Sala 06",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 13:25 - 15:05",
+    "responsavel": "Karla",
+    "turma": "1° ano D",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Laboratório de Eletrônica",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 15:20 - 16:10",
+    "responsavel": "Emily",
+    "turma": "1° ano D",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Laboratório de Informática",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 16:10 - 17:00",
+    "responsavel": "Dev Johnattan",
+    "turma": "1° ano D",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 01",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 13:25 - 14:15",
+    "responsavel": "Dionísio",
+    "turma": "1° ano D",
+    "componente": "PROJ. INTEG."
+  },
+  {
+    "lab_name": "Laboratório de Eletrônica",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 14:15 - 15:05",
+    "responsavel": "Emily",
+    "turma": "1° ano D",
+    "componente": "TEC. LOG. SOC."
+  },
+  {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 15:20 - 17:00",
+    "responsavel": "Edgar",
+    "turma": "1° ano D",
+    "componente": "FRONT-END"
+  },
+    {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 13:25 - 17:00",
+    "responsavel": "Edgar",
+    "turma": "1° ano D",
+    "componente": "FRONT-END"
+  },
+    {
+    "lab_name": "Laboratório de Informática",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "TER, 13:25 - 15:05",
+    "responsavel": "Dev Johnattan",
+    "turma": "2° ano A",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 06",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 07:30 - 08:20",
+    "responsavel": "Karla",
+    "turma": "2° ano A",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Laboratório de Informática",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 08:20 - 11:05",
+    "responsavel": "Dev Johnattan",
+    "turma": "2° ano A",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 11:05 - 11:55",
+    "responsavel": "Edgar",
+    "turma": "2° ano A",
+    "componente": "TEC. LOG. SOC."
+  },
+  {
+    "lab_name": "Laboratório de Informática",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 07:30 - 09:10",
+    "responsavel": "Dev Johnattan",
+    "turma": "2° ano A",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 06",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEX, 07:30 - 08:20",
+    "responsavel": "Karla",
+    "turma": "2° ano A",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Sala 01",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEX, 08:20 - 09:10",
+    "responsavel": "Dionísio",
+    "turma": "2° ano A",
+    "componente": "PROJ. INTEG."
+  },
+  {
+    "lab_name": "Laboratório de Eletrônica",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEX, 09:25 - 10:15",
+    "responsavel": "Emily",
+    "turma": "2° ano A",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Laboratório E-Sports",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "TER, 07:30 - 09:10",
+    "responsavel": "Maurizio",
+    "turma": "2° ano B",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 01",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 07:30 - 08:20",
+    "responsavel": "Dionísio",
+    "turma": "2° ano B",
+    "componente": "componentes[6]"
+  },
+  {
+    "lab_name": "Laboratório E-Sports",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 08:20 - 10:15",
+    "responsavel": "Maurizio",
+    "turma": "2° ano B",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 10:15 - 11:05",
+    "responsavel": "Edgar",
+    "turma": "2° ano B",
+    "componente": "TEC. LOG. SOC."
+  },
+  {
+    "lab_name": "Laboratório E-Sports",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 11:05 - 11:55",
+    "responsavel": "Maurizio",
+    "turma": "2° ano B",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Laboratório E-Sports",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 07:30 - 09:05",
+    "responsavel": "Maurizio",
+    "turma": "2° ano B",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Laboratório de Eletrônica",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEX, 07:30 - 08:20",
+    "responsavel": "Emily",
+    "turma": "2° ano B",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Sala 07",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEX, 08:20 - 10:15",
+    "responsavel": "Karla",
+    "turma": "2° ano B",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "TER, 07:30 - 09:10",
+    "responsavel": "Edgar",
+    "turma": "2° ano C",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 07:30 - 09:10",
+    "responsavel": "Edgar",
+    "turma": "2° ano C",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 09:25 - 10:15",
+    "responsavel": "Edgar",
+    "turma": "2° ano C",
+    "componente": "TEC. LOG. SOC."
+  },
+  {
+    "lab_name": "Sala 06",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 10:15 - 11:55",
+    "responsavel": "Edgar",
+    "turma": "2° ano C",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 07:30 - 09:10",
+    "responsavel": "Edgar",
+    "turma": "2° ano C",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 07",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEX, 07:30 - 08:20",
+    "responsavel": "Emily",
+    "turma": "2° ano C",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Sala 10",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEX, 09:25 - 10:15",
+    "responsavel": "Edgar",
+    "turma": "2° ano C",
+    "componente": "FRONT-END"
+  },
+
+  {
+    "lab_name": "Laboratório de Informática",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 10:15 - 11:55",
+    "responsavel": "Dev Johnattan",
+    "turma": "3° ano A",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Laboratório de Eletrônica",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "TER, 13:25 - 14:15",
+    "responsavel": "Emily",
+    "turma": "3° ano A",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Laboratório de Informática",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "TER, 14:15 - 17:00",
+    "responsavel": "Dev Johnattan",
+    "turma": "3° ano A",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Laboratório de Informática",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 10:15 - 11:55",
+    "responsavel": "Dev Johnattan",
+    "turma": "3° ano A",
+    "componente": "FRONT-END"
   }
+  
 ]
