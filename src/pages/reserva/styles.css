@@ -51,15 +51,18 @@
 .filter label {
   padding-left: 2px;
   padding-right: 2px;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: end;
 }
 
-.avisoSala{
-  display:flex;
+.avisoSala {
+  display: flex;
   justify-content: center;
-  width:100%;
+  text-align: center;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .turmas-container {
   display: flex;
@@ -77,11 +80,11 @@
   flex-direction: column;
 }
 
-h2, h3{
+h2,
+h3 {
   display: flex;
   justify-content: center;
 }
-
 
 @keyframes spinner-8k6ao5md {
   0% {

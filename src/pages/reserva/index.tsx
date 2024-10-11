@@ -192,6 +192,7 @@ const Reserva: React.FC = () => {
                   .map((lab, index) => (
                     <Card
                       key={index}
+                      turma={lab.turma}
                       lab_name={lab.lab_name}
                       imageSala={lab.imageSala}
                       aulaHorario={lab.aulaHorario}
@@ -204,8 +205,8 @@ const Reserva: React.FC = () => {
                   .length === 0 && (
                   <div className="avisoSala">
                     <p>
-                      Não há aulas disponíveis para a turma {selectedTurma}{" "}
-                      neste dia e horário.
+                      Não há aulas disponíveis para a turma{" "}
+                      <b>{selectedTurma}</b> neste dia e horário.
                     </p>
                   </div>
                 )}
@@ -224,6 +225,7 @@ const Reserva: React.FC = () => {
                         .map((lab, index) => (
                           <Card
                             key={index}
+                            turma={lab.turma}
                             lab_name={lab.lab_name}
                             imageSala={lab.imageSala}
                             aulaHorario={lab.aulaHorario}
@@ -236,8 +238,9 @@ const Reserva: React.FC = () => {
                 )
             )
           )}
+
           {/* Mensagem única quando não há laboratórios filtrados */}
-          {!hasFilteredLabs && (
+          {!hasFilteredLabs && selectedTurma === "" && (
             <div className="avisoSala">
               <p>
                 Não há aulas disponíveis para as turmas neste dia e horário.
