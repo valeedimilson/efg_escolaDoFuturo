@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 import Card from "../../components/card/card";
+
 import imagemTeste from "../../images/imageTeste.png";
 
+import ambientes from "../../services/ambientes.json";
+import turmas from "../../services/turmas.json";
+import professores from "../../services/professores.json";
+import componentes from "../../services/componentes.json";
+import labs from "../../services/horarios.json";
 // Definição da interface para os dados dos laboratórios
+
+imagemTeste;
+
 interface Lab {
   lab_name: string;
   imageSala: string;
@@ -12,260 +21,14 @@ interface Lab {
   turma: string;
   componente: string;
 }
+console.log(imagemTeste, labs, ambientes, professores, componentes);
 
 // Constantes para dados fixos
-const ambientes = [
-  "Sala 01",
-  "Sala 02",
-  "Sala 03",
-  "Sala 04",
-  "Sala 05",
-  "Sala 06",
-  "Sala 07",
-  "Sala 08",
-  "Sala 09",
-  "Sala 10",
-  "Sala 11",
-  "Sala 12",
-  "Laboratório de Informática",
-  "Laboratório E-Sports",
-  "Laboratório de Robótica",
-  "Laboratório de Eletrônica",
-  "Laboratório de Tec. de Automação",
-  "Laboratório de Economia Criativa",
-  "Inove Lab.",
-  "Coworking",
-  "Auditório",
-  "Quadra Poliesportiva",
-];
-
-const turmas = [
-  "1° ano A",
-  "1° ano B",
-  "1° ano C",
-  "1° ano D",
-  "2° ano A",
-  "2° ano B",
-  "2° ano C",
-  "3° ano A",
-  "3° ano B",
-];
-
-const professores = [
-  "Dev Johnattan",
-  "Maurizio",
-  "Edgar",
-  "Juliana",
-  "Emily",
-  "Karla",
-  "Dionísio",
-];
-
-const componentes = [
-  "FRONT-END",
-  "UI E UX",
-  "PROJ. INTEG.",
-  "TEC. LOG. SOC.",
-  "PRAT. PROFISSIONAL",
-];
 
 const diaSemanaTexto = ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SAB"];
 
 // Dados dos laboratórios
-const labs: Lab[] = [
-  {
-    lab_name: ambientes[12],
-    imageSala: imagemTeste,
-    aulaHorario: "SEG, 13:25 - 15:05",
-    responsavel: professores[0],
-    turma: turmas[0],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[11],
-    imageSala: imagemTeste,
-    aulaHorario: "SEG, 15:20 - 16:10",
-    responsavel: professores[3],
-    turma: turmas[0],
-    componente: componentes[4],
-  },
-  {
-    lab_name: ambientes[15],
-    imageSala: imagemTeste,
-    aulaHorario: "SEG, 16:10 - 17:00",
-    responsavel: professores[4],
-    turma: turmas[0],
-    componente: componentes[1],
-  },
-  {
-    lab_name: ambientes[15],
-    imageSala: imagemTeste,
-    aulaHorario: "QUA, 13:25 - 14:15",
-    responsavel: professores[4],
-    turma: turmas[0],
-    componente: componentes[3],
-  },
-  {
-    lab_name: ambientes[12],
-    imageSala: imagemTeste,
-    aulaHorario: "QUA, 14:15 - 16:10",
-    responsavel: professores[0],
-    turma: turmas[0],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[11],
-    imageSala: imagemTeste,
-    aulaHorario: "QUA, 14:15 - 16:10",
-    responsavel: professores[3],
-    turma: turmas[0],
-    componente: componentes[4],
-  },
-  {
-    lab_name: ambientes[12],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 13:25 - 16:10",
-    responsavel: professores[0],
-    turma: turmas[0],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[12],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 16:10 - 17:00",
-    responsavel: professores[6],
-    turma: turmas[0],
-    componente: componentes[2],
-  },
-  {
-    lab_name: ambientes[11],
-    imageSala: imagemTeste,
-    aulaHorario: "SEG, 13:25 - 14:15",
-    responsavel: professores[3],
-    turma: turmas[1],
-    componente: componentes[4],
-  },
-  {
-    lab_name: ambientes[13],
-    imageSala: imagemTeste,
-    aulaHorario: "SEG, 14:15 - 17:00",
-    responsavel: professores[1],
-    turma: turmas[1],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[11],
-    imageSala: imagemTeste,
-    aulaHorario: "QUA, 08:25 - 14:15",
-    responsavel: professores[3],
-    turma: turmas[1],
-    componente: componentes[4],
-  },
-  {
-    lab_name: ambientes[0],
-    imageSala: imagemTeste,
-    aulaHorario: "QUA, 14:15 - 15:05",
-    responsavel: professores[6],
-    turma: turmas[1],
-    componente: componentes[2],
-  },
-  {
-    lab_name: ambientes[13],
-    imageSala: imagemTeste,
-    aulaHorario: "QUA, 15:20 - 17:00",
-    responsavel: professores[1],
-    turma: turmas[1],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[13],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 13:25 - 15:05",
-    responsavel: professores[1],
-    turma: turmas[1],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[15],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 15:20 - 16:10",
-    responsavel: professores[4],
-    turma: turmas[1],
-    componente: componentes[3],
-  },
-  {
-    lab_name: ambientes[15],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 15:20 - 16:10",
-    responsavel: professores[4],
-    turma: turmas[1],
-    componente: componentes[1],
-  },
-  {
-    lab_name: ambientes[9],
-    imageSala: imagemTeste,
-    aulaHorario: "SEG, 13:25 - 17:00",
-    responsavel: professores[2],
-    turma: turmas[2],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[9],
-    imageSala: imagemTeste,
-    aulaHorario: "QUA, 13:25 - 15:05",
-    responsavel: professores[2],
-    turma: turmas[2],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[5],
-    imageSala: imagemTeste,
-    aulaHorario: "QUA, 15:20 - 17:00",
-    responsavel: professores[5],
-    turma: turmas[2],
-    componente: componentes[4],
-  },
-  {
-    lab_name: ambientes[15],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 13:25 - 14:15",
-    responsavel: professores[4],
-    turma: turmas[2],
-    componente: componentes[1],
-  },
-  {
-    lab_name: ambientes[15],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 14:15 - 15:05",
-    responsavel: professores[4],
-    turma: turmas[2],
-    componente: componentes[1],
-  },
-  {
-    lab_name: ambientes[0],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 15:20 - 16:10",
-    responsavel: professores[6],
-    turma: turmas[2],
-    componente: componentes[2],
-  },
-  {
-    lab_name: ambientes[12],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 16:10 - 17:00",
-    responsavel: professores[0],
-    turma: turmas[2],
-    componente: componentes[0],
-  },
-  {
-    lab_name: ambientes[12],
-    imageSala: imagemTeste,
-    aulaHorario: "QUI, 10:10 - 11:00",
-    responsavel: professores[0],
-    turma: turmas[2],
-    componente: componentes[0],
-  },
-];
+//const labs: Lab[] = dataLab;
 
 const timeToMinutes = (time: string): number => {
   const [hours, minutes] = time.split(":").map(Number);
@@ -332,16 +95,14 @@ const Reserva: React.FC = () => {
   );
 
   function retornaDataAtual() {
-  const agora = new Date();
+    const agora = new Date();
     const hora = agora.getHours();
     const diaDaSemana = agora.getDay();
 
     return [hora, diaDaSemana];
-}
+  }
   useEffect(() => {
-    
     const horario = retornaDataAtual()[0];
-    
 
     if (horario < 12) {
       setStartTime("07:00");
@@ -401,7 +162,6 @@ const Reserva: React.FC = () => {
           <div>Dia da Semana:</div>
           <select
             defaultValue={selectedDia}
-            
             onChange={(e) => setSelectedDia(e.target.value)}
           >
             <option value="">Todos</option>

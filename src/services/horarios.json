@@ -1,0 +1,186 @@
+[
+  {
+    "lab_name": "Sala 12",
+	"imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 13:25 - 15:05",
+    "responsavel": "Dev Johnattan",
+    "turma": "1° ano A",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 11",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 15:20 - 16:10",
+    "responsavel": "Juliana",
+    "turma": "1° ano A",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Sala 15",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 16:10 - 17:00",
+    "responsavel": "Emily",
+    "turma": "1° ano A",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Sala 15",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 13:25 - 14:15",
+    "responsavel": "Emily",
+    "turma": "1° ano A",
+    "componente": "TEC. LOG. SOC."
+  },
+  {
+    "lab_name": "Sala 12",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 14:15 - 16:10",
+    "responsavel": "Dev Johnattan",
+    "turma": "1° ano A",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 11",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 14:15 - 16:10",
+    "responsavel": "Juliana",
+    "turma": "1° ano A",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Sala 12",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 13:25 - 16:10",
+    "responsavel": "Dev Johnattan",
+    "turma": "1° ano A",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 12",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 16:10 - 17:00",
+    "responsavel": "Dionísio",
+    "turma": "1° ano A",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Sala 11",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 13:25 - 14:15",
+    "responsavel": "Juliana",
+    "turma": "1° ano B",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Sala 13",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 14:15 - 17:00",
+    "responsavel": "Maurizio",
+    "turma": "1° ano B",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 11",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 08:25 - 14:15",
+    "responsavel": "Juliana",
+    "turma": "1° ano B",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Sala 01",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 14:15 - 15:05",
+    "responsavel": "Dionísio",
+    "turma": "1° ano B",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Sala 13",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 15:20 - 17:00",
+    "responsavel": "Maurizio",
+    "turma": "1° ano B",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 13",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 13:25 - 15:05",
+    "responsavel": "Maurizio",
+    "turma": "1° ano B",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 15",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 15:20 - 16:10",
+    "responsavel": "Emily",
+    "turma": "1° ano B",
+    "componente": "TEC. LOG. SOC."
+  },
+  {
+    "lab_name": "Sala 15",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 15:20 - 16:10",
+    "responsavel": "Emily",
+    "turma": "1° ano B",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Sala 09",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "SEG, 13:25 - 17:00",
+    "responsavel": "Edgar",
+    "turma": "1° ano C",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 09",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 13:25 - 15:05",
+    "responsavel": "Edgar",
+    "turma": "1° ano C",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 05",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUA, 15:20 - 17:00",
+    "responsavel": "Karla",
+    "turma": "1° ano C",
+    "componente": "PRAT. PROFISSIONAL"
+  },
+  {
+    "lab_name": "Sala 15",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 13:25 - 14:15",
+    "responsavel": "Emily",
+    "turma": "1° ano C",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Sala 15",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 14:15 - 15:05",
+    "responsavel": "Emily",
+    "turma": "1° ano C",
+    "componente": "UI E UX"
+  },
+  {
+    "lab_name": "Sala 01",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 15:20 - 16:10",
+    "responsavel": "Dionísio",
+    "turma": "1° ano C",
+    "componente": "FRONT-END"
+  },
+  {
+    "lab_name": "Sala 12",
+    "imageSala": "https://efg.org.br/images/ambiente-inovacao/laboratorio-inovacao/laboratorio-inovacao-img-02.png",
+    "aulaHorario": "QUI, 16:10 - 17:00",
+    "responsavel": "Dev Johnattan",
+    "turma": "1° ano C",
+    "componente": "FRONT-END"
+  }
+]
