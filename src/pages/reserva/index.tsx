@@ -374,7 +374,7 @@ const Reserva: React.FC = () => {
           />
         </label>
         <label>
-          Turma:
+          <div>Turma:</div>
           <select
             value={selectedTurma}
             onChange={(e) => setSelectedTurma(e.target.value)}
@@ -388,7 +388,7 @@ const Reserva: React.FC = () => {
           </select>
         </label>
         <label>
-          Dia da Semana:
+          <div>Dia da Semana:</div>
           <select
             value={selectedDia}
             onChange={(e) => setSelectedDia(e.target.value)}
@@ -425,43 +425,48 @@ const Reserva: React.FC = () => {
                 {/* Mensagem caso não haja aulas para a turma selecionada */}
                 {filteredLabs.filter((lab) => lab.turma === selectedTurma)
                   .length === 0 && (
-                  <p>
-                    Não há aulas disponíveis para a turma {selectedTurma} neste
-                    dia e horário.
-                  </p>
+                  <div className="avisoSala">
+                    <p>
+                      Não há aulas disponíveis para a turma {selectedTurma}{" "}
+                      neste dia e horário.
+                    </p>
+                  </div>
                 )}
               </div>
             </div>
           ) : (
-            turmas.map((turma) => (
-              filteredLabs.filter((lab) => lab.turma === turma)
-                .length > 0 && hasFilteredLabs && (
-                
-              <div className="turma-column" key={turma}>
-                <h3>{turma}</h3>
-                <div className="cards">
-                  {
-                  filteredLabs
-                    .filter((lab) => lab.turma === turma)
-                    .map((lab, index) => (
-                      <Card
-                        key={index}
-                        lab_name={lab.lab_name}
-                        imageSala={lab.imageSala}
-                        aulaHorario={lab.aulaHorario}
-                        responsavel={lab.responsavel}
-                        componente={lab.componente}
-                      />
-                      
-                    ))}
-                </div>
-              </div>
-            )))
+            turmas.map(
+              (turma) =>
+                filteredLabs.filter((lab) => lab.turma === turma).length > 0 &&
+                hasFilteredLabs && (
+                  <div className="turma-column" key={turma}>
+                    <h3>{turma}</h3>
+                    <div className="cards">
+                      {filteredLabs
+                        .filter((lab) => lab.turma === turma)
+                        .map((lab, index) => (
+                          <Card
+                            key={index}
+                            lab_name={lab.lab_name}
+                            imageSala={lab.imageSala}
+                            aulaHorario={lab.aulaHorario}
+                            responsavel={lab.responsavel}
+                            componente={lab.componente}
+                          />
+                        ))}
+                    </div>
+                  </div>
+                )
+            )
           )}
-            {/* Mensagem única quando não há laboratórios filtrados */}
-  {!hasFilteredLabs && (
-    <p>Não há aulas disponíveis para as turmas neste dia e horário.</p>
-  )}
+          {/* Mensagem única quando não há laboratórios filtrados */}
+          {!hasFilteredLabs && (
+              <div className="avisoSala">
+                <p>
+                  Não há aulas disponíveis para as turmas neste dia e horário.
+                </p>
+              </div>
+            )}
         </div>
       </div>
     </div>

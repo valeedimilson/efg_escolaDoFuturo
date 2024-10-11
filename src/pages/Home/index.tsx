@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./styles.css";
+import Reserva from "../reserva";
 
 function Home() {
   return (
     <div className="container">
       <div className="content">
-        <h2>Hello World - Home</h2>
-        <Link to="/login">Pagina de Login</Link>
-        <Link to="/cadastro">Pagina de Cadastro</Link>
+        <Reserva/>
       </div>
     </div>
   );
