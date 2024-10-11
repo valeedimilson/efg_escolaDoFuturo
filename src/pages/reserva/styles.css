@@ -42,6 +42,7 @@
 }
 .filter input {
   width: 100%;
+  height: 24px;
 }
 .filter select {
   width: 100%;
@@ -50,7 +51,9 @@
 .filter label {
   padding-left: 2px;
   padding-right: 2px;
-  
+  display:flex;
+  flex-direction:column;
+  justify-content: end;
 }
 
 .avisoSala{

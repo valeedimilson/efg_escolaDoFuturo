@@ -327,11 +327,21 @@ const Reserva: React.FC = () => {
   const [startTime, setStartTime] = useState("08:00");
   const [endTime, setEndTime] = useState("10:00");
   const [selectedTurma, setSelectedTurma] = useState("");
-  const [selectedDia, setSelectedDia] = useState("");
+  const [selectedDia, setSelectedDia] = useState(
+    diaSemanaTexto[retornaDataAtual()[1]]
+  );
 
+  function retornaDataAtual() {
+  const agora = new Date();
+    const hora = agora.getHours();
+    const diaDaSemana = agora.getDay();
+
+    return [hora, diaDaSemana];
+}
   useEffect(() => {
-    const agora = new Date();
-    const horario = agora.getHours();
+    
+    const horario = retornaDataAtual()[0];
+    
 
     if (horario < 12) {
       setStartTime("07:00");
@@ -390,15 +400,22 @@ const Reserva: React.FC = () => {
         <label>
           <div>Dia da Semana:</div>
           <select
-            value={selectedDia}
+            defaultValue={selectedDia}
+            
             onChange={(e) => setSelectedDia(e.target.value)}
           >
             <option value="">Todos</option>
-            {diaSemanaTexto.map((dia, index) => (
-              <option key={index} value={dia}>
-                {dia}
-              </option>
-            ))}
+            {diaSemanaTexto.map((dia, index) =>
+              dia == diaSemanaTexto[retornaDataAtual()[1]] ? (
+                <option key={index} value={dia}>
+                  {dia}
+                </option>
+              ) : (
+                <option key={index} value={dia}>
+                  {dia}
+                </option>
+              )
+            )}
           </select>
         </label>
       </div>
@@ -461,12 +478,12 @@ const Reserva: React.FC = () => {
           )}
           {/* Mensagem única quando não há laboratórios filtrados */}
           {!hasFilteredLabs && (
-              <div className="avisoSala">
-                <p>
-                  Não há aulas disponíveis para as turmas neste dia e horário.
-                </p>
-              </div>
-            )}
+            <div className="avisoSala">
+              <p>
+                Não há aulas disponíveis para as turmas neste dia e horário.
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
