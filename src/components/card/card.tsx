@@ -10,7 +10,7 @@ function Card(Props: any) {
             <img src={Props.imageSala} width={"100%"} />
           </p>
 
-          <p>horario: {Props.aulaHorario}</p>
+          <p>Horario: {Props.aulaHorario}</p>
           <p>Responsável: {Props.responsavel}</p>
           <p>Turma:</p>
           <p>
