@@ -73,6 +73,11 @@
   flex: 1;
   min-width: 200px; /* Largura mínima para cada coluna */
   margin: 10px;
+
+  background-color: #e4e4e4;
+  border: 1px solid #b1b1b1;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px #999898;
 }
 
 .cards {
